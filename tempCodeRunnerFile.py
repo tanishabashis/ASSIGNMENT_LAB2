@@ -1,15 +1,15 @@
 class Employee:
-    def __init__(self, emp_id, name, age, salary):
+    def _init_(self, emp_id, name, age, salary):
         self.emp_id = emp_id
         self.name = name
         self.age = age
         self.salary = salary
 
-    def __str__(self):
+    def _str_(self):
         return f"{self.emp_id}\t{self.name}\t{self.age}\t{self.salary}"
 
 class EmployeeTable:
-    def __init__(self, employees):
+    def _init_(self, employees):
         self.employees = employees
 
     def print_table(self):
@@ -28,7 +28,7 @@ class EmployeeTable:
         except KeyError:
             print("Invalid sorting parameter")
 
-if __name__== "__main__":
+if __name__ == "_main_":
     employees_data = [
         Employee("161E90", "Ramu", 35, 59000),
         Employee("171E22", "Tejas", 30, 82100),
